@@ -1,0 +1,97 @@
+#download jmol 
+#open pdb file in jmol. default setting is coloring with pink helices, yellow sheets, blue coils and white loop structures. 
+#right click to get menu and open console to write commands. 
+
+#alignment position vs structure alignment position
+
+##	Common for all TLR protein predictions	##
+# Set background of window
+background white
+
+# background color of entire structure
+select all
+color lightgray
+
+# coloring sheets
+select sheets
+color palegreen
+
+# coloring helices
+select helix
+color lightblue
+
+
+
+##	For TLR4	##
+# coloring of TIR domain:
+select (670-816)
+color darkgray
+
+# coloring of TM domain:
+select (630-650)
+color gold
+
+# coloring of ecto domain:
+#select (27-650)
+#color cadetblue
+
+#coloring of sites common between both analyses at p-value 0.05. NOTE last site not included as it is not part of the predicted structure (see alignment)
+select (32,55,97,160,209,300,313,361,828)
+color deeppink
+
+# Rotate figure to desired orientation and zoom in so it fills the entire screen. 
+# Click camera button to save picture. 
+# PNG with max compression(quality gives best resolution
+
+
+
+##	For TLR7	##
+# coloring of TIR domain:
+select (870-1050)
+color darkgray
+
+# coloring of TM domain:
+select (839-870)
+color gold
+
+# coloring of ecto domain:
+#select (41-838)
+#color cadetblue
+
+#coloring of sites common between both analyses at p-value 0.05. NOTE first site not included as it is not part of the predicted structure (see alignment)
+select (241,280,306,307,392,441,449,598,690,692,698)
+color deeppink
+
+# Rotate figure to desired orientation and zoom in so it fills the entire screen. 
+# Click camera button to save picture. 
+# PNG with max compression(quality gives best resolution
+
+
+##	For TLR9	##
+# coloring of TIR domain:
+select (869-1033)
+color darkgray
+
+# coloring of TM domain:
+select (821-868)
+color gold
+
+# coloring of ecto domain:
+#select (41-838)
+#color cadetblue
+
+#coloring of sites common between both analyses at p-value 0.05. NOTE site 149 not included as it is not part of the predicted structure (see alignment)
+select (149,165,415,436,449,520,541,673,676,682,725)
+color deeppink
+
+# Rotate figure to desired orientation and zoom in so it fills the entire screen. 
+# Click camera button to save picture. 
+# PNG with max compression(quality gives best resolution
+
+
+
+
+
+
+
+
